@@ -1,0 +1,24 @@
+{
+  "name": "taxpay",
+  "version": "1.0.0",
+  "description": "A website for providing CPA services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParampreetR/taxpay.git"
+  },
+  "author": "ParampreetR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ParampreetR/taxpay/issues"
+  },
+  "homepage": "https://github.com/ParampreetR/taxpay#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}
