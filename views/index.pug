@@ -2,33 +2,37 @@ doctype html
 html 
   include ./components/head
   body 
-    header.flex.justify-center.fixed.w-screen.top-3
-      nav(class="min-h-[100px] h-[12vh] bg-[#000000aa] lg:inline-block lg:w-[60vw] rounded-xl p-2 backdrop-blur-lg shadow-2xl")
-        ul 
-          li
-            a(href="#") Option 1
-
-          li
-            a(href="#") Option 2
-
-          li
-            a(href="#") Option 3
-
+    header.flex.justify-center.fixed.w-screen.top-3.z-50
+      include ./components/nav
     main 
-      .bg-black.pt-36.pb-12.flex.place-content-between(style="background-image: url(/images/cover.jpg); background-size: cover; background-repeat: no-repeat;")
-        div Hello
-        form.shadow-lg.rounded-xl.inline-block.p-10.py-12.m-10.mr-20.text-white.backdrop-blur-md(class="bg-[#000000aa]")
-          h2.text-center.text-2xl.font-md Create new account
-          div.flex.flex-col.my-12
-            label.pl-5(for="username") Username
-            input.rounded-full.px-4.py-3.w-96.text-black(type="text", name="name")
+      .bg-black.pt-60.pb-12.flex.items-center.place-content-evenly.flex-col.h-screen(class="lg:flex-row lg:pt-36", style="background-image: url(/images/cover.jpg); background-size: cover; background-repeat: no-repeat;")
+        div
+          .text-4xl.font-bold.text-white This 
+          .text-4xl.font-semibold.text-red-100 contains tagline for website
+          ul.text-white.my-10.list-disc
+            li Pay trucking taxes 
+            li Pay personal taxes
+            li Other misc services
 
-          div.flex.flex-col.my-12
+        form.shadow-lg.rounded-xl.inline-block.p-10.py-12.my-12.text-white.backdrop-blur-md(class="bg-[#000000aa]")
+          h2.text-center.text-2xl.font-md Create new account
+          div.flex.flex-col.my-10
+            label.pl-5(for="email") Email
+            input.rounded-full.px-4.py-3.w-96.text-black(type="email", name="email", placeholder="alan@gmail.com")
+
+          div.flex.flex-col.my-10
+            label.pl-5(for="phone") Phone
+            input.rounded-full.px-4.py-3.w-96.text-black(type="text", name="phone", placeholder="124353523432")
+
+          div.flex.flex-col.my-10
             label.pl-5(for="username") Password
-            input.rounded-full.px-4.py-3.w-96.text-black(type="password", name="pass")
+            input.rounded-full.px-4.py-3.w-96.text-black(type="password", name="pass", placeholder="**********")
 
           div.text-center
-            input.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(type="submit", value="Signup", class="hover:text-black hover:bg-white hover:shadow-xl")
+            input.mx-5.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(type="submit", value="Signup", class="hover:text-black hover:bg-white hover:shadow-xl")
+            a(class="hover:underline") Already have account?
+
+
 
 
         

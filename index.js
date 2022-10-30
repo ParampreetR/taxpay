@@ -13,6 +13,22 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/dashboard", (req, res) => {
+  res.render("dashboard");
+});
+
+app.get("/form/trucking", (req, res) => {
+  res.render("trucking");
+});
+
+app.get("/form/corporate", (req, res) => {
+  res.render("corporate");
+});
+
+app.get("/form/general", (req, res) => {
+  res.render("general");
+});
+
 app.listen(PORT, () => {
   console.info(`Server live at http://localhost:${PORT}/`);
 });

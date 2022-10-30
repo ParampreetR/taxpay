@@ -1,0 +1,74 @@
+doctype html 
+html 
+  head 
+    include ./components/head
+
+  body 
+    header.flex.justify-center.fixed.w-screen.top-3.z-50
+      include ./components/nav
+
+    main
+      section.pt-60.pb-12.flex.items-center.place-content-center.flex-col(class="lg:flex-row lg:pt-36", style="background-image: url(/images/trucking.jpg); background-size: cover; background-repeat: no-repeat;")
+        form.shadow-lg.rounded-xl.inline-block.p-10.py-12.my-12.text-white.backdrop-blur-md(class="bg-[#000000aa]")
+          h2.text-center.text-2xl.font-md Create new account
+          div.flex.flex-col.my-10
+            label.pl-5(for="email") USDOT/MC#
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="email", name="email")
+
+          div.flex.flex-col.my-10
+            label.pl-5(for="email") Permits
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="email", name="email")
+
+          div.flex.flex-col.my-10
+            label.pl-5(for="email") IFTA
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="email", name="email")
+         
+          div.flex.flex-col.my-10
+            label.pl-5(for="email") KYU#
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="email", name="email")
+         
+          div.flex.flex-col.my-10
+            label.pl-5(for="email") NY
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="email", name="email")
+         
+          div.flex.flex-col.my-10
+            label.pl-5(for="email") HUT
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="email", name="email")
+         
+          div.flex.flex-col.my-10
+            label.pl-5(for="email") NM WDT
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="email", name="email")
+         
+          div.flex.flex-col.my-10
+            label.pl-5(for="email") OR WMT
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="email", name="email")
+         
+          div.flex.flex-col.my-10
+            label.pl-5(for="email") UCR CA
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="email", name="email")
+         
+          div.flex.flex-col.my-10
+            label.pl-5(for="email") DMV IRP Same day license Plates
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="email", name="email")
+         
+          div.flex.flex-col.my-10
+            label.pl-5(for="email") Title Transfer (Truck & Trailers)
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="email", name="email")
+
+
+
+          div.flex.flex-col.my-10
+            label.pl-5(for="phone") VIN Verification
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="text", name="phone")
+
+          div.flex.flex-col.my-10
+            label.pl-5(for="username") Bond Filing
+            input.rounded-full.px-4.py-3.text-black(class="w-[600px]", type="password", name="pass")
+
+          div.text-center
+            input.mx-5.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(type="submit", value="Signup", class="hover:text-black hover:bg-white hover:shadow-xl")
+            a(class="hover:underline") Already have account?
+
+
+
+
