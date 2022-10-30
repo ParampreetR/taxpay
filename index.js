@@ -2,7 +2,7 @@ const Express = require("express");
 const path = require("path");
 
 const app = Express();
-const PORT = process.env.PORT | 8080;
+const PORT = process.env.PORT || 8080;
 
 app.set("views", "./views");
 app.set("view engine", "pug");
