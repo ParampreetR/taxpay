@@ -14,25 +14,63 @@ html
             li Pay personal taxes
             li Other misc services
 
-        form.shadow-lg.rounded-xl.inline-block.p-10.py-12.my-12.text-white.backdrop-blur-md(class="bg-[#000000aa]")
-          h2.text-center.text-2xl.font-md Create new account
-          div.flex.flex-col.my-10
-            label.pl-5(for="email") Email
-            input.rounded-full.px-4.py-3.w-96.text-black(type="email", name="email", placeholder="alan@gmail.com")
 
-          div.flex.flex-col.my-10
-            label.pl-5(for="phone") Phone
-            input.rounded-full.px-4.py-3.w-96.text-black(type="text", name="phone", placeholder="124353523432")
+        form.shadow-lg.rounded-xl.inline-block.px-20.py-12.my-12.text-white.backdrop-blur-md(class="bg-[#000000aa]")
+          div.flex.flex-col.my-10.gap-5
+            summary.font-bold.text-5xl.text-center(class="text-[#e6433b]") 20109+
+            div.text-white.text-lg.font-semibold.text-center Orders processed
 
-          div.flex.flex-col.my-10
-            label.pl-5(for="username") Password
-            input.rounded-full.px-4.py-3.w-96.text-black(type="password", name="pass", placeholder="**********")
+          div.flex.flex-col.my-10.gap-5
+            summary.font-semibold.text-4xl.text-center.text-white 4012+
+            div.text-white.text-lg.font-semibold.text-center Customers
 
-          div.text-center
-            input.mx-5.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(type="submit", value="Signup", class="hover:text-black hover:bg-white hover:shadow-xl")
-            a(class="hover:underline") Already have account?
+          div.flex.flex-col.my-10.gap-5
+            summary.font-semibold.text-4xl.text-center.text-white 234
+            div.text-white.text-lg.font-semibold.text-center Orders processing
+
+        //- form.shadow-lg.rounded-xl.inline-block.p-10.py-12.my-12.text-white.backdrop-blur-md(class="bg-[#000000aa]")
+        //-   h2.text-center.text-2xl.font-md Create new account
+        //-   div.flex.flex-col.my-10
+        //-     label.pl-5(for="email") Email
+        //-     input.rounded-full.px-4.py-3.w-96.text-black(type="email", name="email", placeholder="alan@gmail.com")
+
+        //-   div.flex.flex-col.my-10
+        //-     label.pl-5(for="phone") Phone
+        //-     input.rounded-full.px-4.py-3.w-96.text-black(type="text", name="phone", placeholder="124353523432")
+
+        //-   div.flex.flex-col.my-10
+        //-     label.pl-5(for="username") Password
+        //-     input.rounded-full.px-4.py-3.w-96.text-black(type="password", name="pass", placeholder="**********")
+
+        //-   div.text-center
+        //-     input.mx-5.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(type="submit", value="Signup", class="hover:text-black hover:bg-white hover:shadow-xl")
+        //-     a(class="hover:underline") Already have account?
 
 
-
+      .p-10.py-12.backdrop-blur-md.mx-auto.text-center(class="bg-[#000000]")
+        a(name="services")
+        section.text-4xl.font-semibold.text-center.text-white.mb-5(class="text-[#e6433b]") Services
+        div.flex.rounded-xl.p-10.py-12.my-2.mx-auto.text-center.gap-10.flex-wrap.place-content-evenly(class="w-[90vw] md:w-[70vw]")
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") USDOT/MC#
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Permits
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") IFTA
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") KYU#
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") NY
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") HUT
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") NM WDT
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") OR WMT
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") UCR CA
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") DMV IRP Same day license Plates
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Title Transfer (Truck & Trailers)
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") VIN Verification
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Bond Filing
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Corporation Formation
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Payroll
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Bookkeeping Accounts
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Sales & Use Tax Returns
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Tax Extentions
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Individual & Corporate Taxes prepration
+          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Notary Public
+          
 
         

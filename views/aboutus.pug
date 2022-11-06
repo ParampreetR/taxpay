@@ -1,0 +1,23 @@
+doctype html 
+html 
+  head 
+    include ./components/head
+
+  body 
+    header.flex.justify-center.fixed.w-screen.top-3.z-50
+      include ./components/nav
+
+    main
+      div.pt-60.pb-12.h-screen(class="lg:flex-row lg:pt-36", style="background-image: url(/images/trucking.jpg); background-size: cover; background-repeat: no-repeat;")
+        .p-10.py-12.my-12.mt-24.backdrop-blur-md.mx-auto.text-center(class="bg-[#000000aa]")
+          section.text-4xl.font-semibold.text-center.text-white.mb-5 
+            span(class="text-[#e6433b]") About 
+            span us
+          .text-white
+            p Kuljeen Bhullar
+            p Innovative Tax & Reg Inc 
+            p Permits@InnovativeHelpline.com < For general Permits and IFTA Related queries
+            p Tax@InnovativeHelpline.com < For Tax Preparation Related queries
+            p IRP@InnovativeHelpline.com  < For IRP Registration Related queries
+            p Payroll@InnovativeHelpline.com  < For Payroll Related queries
+
