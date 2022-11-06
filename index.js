@@ -22,6 +22,10 @@ app.get("/dashboard", (req, res) => {
   res.render("dashboard");
 });
 
+app.get("/contactus", (req, res) => {
+  res.render("contactus");
+});
+
 app.get("/aboutus", (req, res) => {
   res.render("aboutus");
 });
