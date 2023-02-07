@@ -1,0 +1,56 @@
+doctype html 
+html 
+  head 
+    include ./components/head
+
+  body 
+    header.flex.justify-center.fixed.w-screen.top-3.z-50
+      include ./components/nav
+
+    main.mt-44
+      section.text-4xl.font-semibold.text-center.text-black.mb-5 
+        span(class="text-[#0B5351]") Create a  
+        span Account 
+      
+      div.my-20.mx-60
+        div.border-2.rounded-lg.p-8.my-5.shadow-lg(class="bg-[#0B5351aa]")
+          h2.text-2xl Personal Information
+          section.flex.gap-10.justify-center.place-content-evenly.flex-wrap.my-10
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="fullname" placeholder="fullname")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="email" name="email" placeholder="email")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="phone" placeholder="phone no")
+
+        div.border-2.rounded-lg.p-8.my-5.shadow-lg(class="bg-[#0B5351aa]")
+          h2.text-2xl Business Information
+          section.flex.gap-10.justify-center.place-content-evenly.flex-wrap.my-10
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="baddress" placeholder="business address")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="city" placeholder="city")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="state" placeholder="state")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="zipcode" placeholder="zipcode")
+
+        div.border-2.rounded-lg.p-8.my-5.shadow-lg(class="bg-[#0B5351aa]")
+          h2.text-2xl Mailing Information
+          section.flex.gap-10.justify-center.place-content-evenly.flex-wrap.my-10
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="baddress" placeholder="mailing address")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="city" placeholder="city")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="state" placeholder="state")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="zipcode" placeholder="zipcode")
+
+        div.border-2.rounded-lg.p-8.my-5.shadow-lg(class="bg-[#0B5351aa]")
+          h2.text-2xl Company Information
+          section.flex.gap-10.justify-center.place-content-evenly.flex-wrap.my-10
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="cname" placeholder="company name")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="city" placeholder="fax")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="state" placeholder="cell")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="zipcode" placeholder="DBA")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="baddress" placeholder="FIEN")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="city" placeholder="IRp Account")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="state" placeholder="DOT")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="zipcode" placeholder="DOT Pin")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="baddress" placeholder="ICC MC")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="city" placeholder="ICC Pin")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="state" placeholder="CA")
+            input.grow.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="zipcode" placeholder="KU")
+            input.px-3.py-2.border-0.shadow-sm.rounded-sm(class="border-[#999999]" type="text" name="zipcode" placeholder="IFTA Account")
+
+          

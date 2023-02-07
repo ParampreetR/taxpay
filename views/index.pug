@@ -5,73 +5,106 @@ html
     header.flex.justify-center.fixed.w-screen.top-3.z-50
       include ./components/nav
     main 
-      .bg-black.pt-60.pb-12.flex.items-center.place-content-evenly.flex-col.h-screen(class="lg:flex-row lg:pt-36", style="background-image: url(/images/cover.jpg); background-size: cover; background-repeat: no-repeat;")
-        div
-          .text-4xl.font-bold.text-white One Platform,
-          .text-4xl.font-semibold.text-red-100 Multiple Services
-          ul.text-white.my-10.list-disc.text-lg
+      .bg-black.pt-72.pb-12.flex.items-center.place-content-evenly.flex-col.h-screen(class="lg:flex-row lg:pt-36", style="background-image: url(/images/cover1.jpg); background-size: cover; background-repeat: no-repeat;")
+        div(class="mt-60 lg:mt-0")
+          .text-4xl.font-bold.text-black(style="text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;") One Platform,
+          .text-4xl.font-semibold(class="text-[#0B5351]" style="text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;") Multiple Services
+          ul.text-black.my-10.list-disc.text-lg
             li All Trucking Needs
             li Corp / Personal Tax Prepration
             li Other services
 
 
-        form.shadow-lg.rounded-xl.inline-block.px-20.py-12.my-12.text-white.backdrop-blur-md(class="bg-[#000000aa]")
+        form.shadow-lg.rounded-sm.inline-block.px-20.py-12.my-12.text-black.backdrop-blur-md(class="bg-[#ffffffaa]")
           div.flex.flex-col.my-10.gap-5
-            summary.font-bold.text-5xl.text-center(class="text-[#e6433b]") 20109+
-            div.text-white.text-lg.font-semibold.text-center Orders processed
+            div.font-bold.text-5xl.text-center(class="text-[#0B5351]") 20109+
+            div.text-black.text-lg.font-semibold.text-center Orders processed
 
           div.flex.flex-col.my-10.gap-5
-            summary.font-semibold.text-4xl.text-center.text-white 4012+
-            div.text-white.text-lg.font-semibold.text-center Customers
+            div.font-semibold.text-4xl.text-center.text-black 4012+
+            div.text-black.text-lg.font-semibold.text-center Customers
 
           div.flex.flex-col.my-10.gap-5
-            summary.font-semibold.text-4xl.text-center.text-white 234
-            div.text-white.text-lg.font-semibold.text-center Orders processing
+            div.font-semibold.text-4xl.text-center.text-black 234
+            div.text-black.text-lg.font-semibold.text-center Orders processing
+    
 
-        //- form.shadow-lg.rounded-xl.inline-block.p-10.py-12.my-12.text-white.backdrop-blur-md(class="bg-[#000000aa]")
+        //- form.shadow-lg.rounded-sm.inline-block.p-10.py-12.my-12.text-white.backdrop-blur-md(class="bg-[#000000aa]")
         //-   h2.text-center.text-2xl.font-md Create new account
         //-   div.flex.flex-col.my-10
         //-     label.pl-5(for="email") Email
-        //-     input.rounded-full.px-4.py-3.w-96.text-black(type="email", name="email", placeholder="alan@gmail.com")
+        //-     input.rounded-sm.px-4.py-3.w-96.text-black(type="email", name="email", placeholder="alan@gmail.com")
 
         //-   div.flex.flex-col.my-10
         //-     label.pl-5(for="phone") Phone
-        //-     input.rounded-full.px-4.py-3.w-96.text-black(type="text", name="phone", placeholder="124353523432")
+        //-     input.rounded-sm.px-4.py-3.w-96.text-black(type="text", name="phone", placeholder="124353523432")
 
         //-   div.flex.flex-col.my-10
         //-     label.pl-5(for="username") Password
-        //-     input.rounded-full.px-4.py-3.w-96.text-black(type="password", name="pass", placeholder="**********")
+        //-     input.rounded-sm.px-4.py-3.w-96.text-black(type="password", name="pass", placeholder="**********")
 
         //-   div.text-center
-        //-     input.mx-5.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(type="submit", value="Signup", class="hover:text-black hover:bg-white hover:shadow-xl")
+        //-     input.mx-5.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(type="submit", value="Signup", class="hover:text-black hover:bg-white hover:shadow-xl")
         //-     a(class="hover:underline") Already have account?
 
 
-      .p-10.py-12.backdrop-blur-md.mx-auto.text-center(class="bg-[#000000]")
-        a(name="services")
-        section.text-4xl.font-semibold.text-center.text-white.mb-5(class="text-[#e6433b]") Services
-        div.flex.rounded-xl.p-10.py-12.my-2.mx-auto.text-center.gap-10.flex-wrap.place-content-evenly(class="w-[90vw] md:w-[70vw]")
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") USDOT
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Truck Permits
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") IFTA
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") KY-WDT
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") NY-HUT
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") MC Profile Update
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") FHVUT/2290 Filing
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") NM WDT
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") OR WMT
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") UCR CA
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") DMV IRP Same day license Plates
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Title Transfer (Truck & Trailers)
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") VIN Verification
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Bond Filing
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Corporation Formation
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Payroll Services
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Bookkeeping Accounts
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Sales & Use Tax Returns
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Tax Extentions
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Individual & Corporate Taxes prepration
-          a.whitespace-nowrap.text-white.rounded-xl.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-500(href="#" class="hover:text-black hover:bg-white hover:shadow-xl") Notary Public
-          
+      .custom-shape-divider
+        svg(data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none")
+          path(d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill")
 
-        
+      .p-10.py-24.mx-auto.text-center(class="bg-white")
+        a(name="services")
+        section.text-4xl.font-semibold.text-center.mb-5.text-black Services
+        .flex.flex-row.items-start.my-20.justify-center.container-fluid
+          div(class="w-96 flex flex-col rounded-sm shadow-xl mx-[2vw] py-5 px-3 bg-white gap-8 border-8 border-[#0B5351]")
+            img.mx-auto.w-20(src="/images/briefcase.png")
+            div.flex.flex-col.gap-2 
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") USDOT
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") Truck Permits
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") IFTA
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") KY-WDT
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") NY-HUT
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") MC Profile Update
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") FHVUT/2290 Filing
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") NM WDT
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") OR WMT
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") UCR CA
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") DMV IRP Same day license Plates
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") Title Transfer (Truck & Trailers)
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") VIN Verification
+              a.text-black.bg-white.px-4.py-2.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5 hover:border-[#0b5351] border-2 border-white") Bond Filing
+
+
+          div(class="w-96 flex flex-col rounded-sm shadow-xl mx-[2vw] py-5 px-3 bg-white border-8 border-[#0B5351] gap-8")
+            img.mx-auto.w-20(src="/images/truck.png")
+            div.flex.flex-col.gap-2 
+                a.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:border-[#0b5351] hover:-translate-y-0.5") Corporation Formation
+                a.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:border-[#0b5351] hover:-translate-y-0.5") Payroll Services
+                a.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:border-[#0b5351] hover:-translate-y-0.5") Bookkeeping Accounts
+                a.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:border-[#0b5351] hover:-translate-y-0.5") Sales & Use Tax Returns
+                a.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:border-[#0b5351] hover:-translate-y-0.5") Tax Extentions
+                a.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:border-[#0b5351] hover:-translate-y-0.5") Individual & Corporate Taxes prepration
+          div(class="w-96 flex flex-col rounded-sm shadow-xl mx-[2vw] h-96 py-5 px-3 bg-white border-8 border-[#0B5351] gap-8")
+        //- div.flex.rounded-sm.p-10.py-12.my-2.mx-auto.text-center.gap-10.flex-wrap.place-content-evenly(class="w-[90vw] md:w-[70vw]")
+        //-   a.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") USDOT
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") Truck Permits
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") IFTA
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") KY-WDT
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") NY-HUT
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") MC Profile Update
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") FHVUT/2290 Filing
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") NM WDT
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") OR WMT
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") UCR CA
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") DMV IRP Same day license Plates
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") Title Transfer (Truck & Trailers)
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") VIN Verification
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") Bond Filing
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") Corporation Formation
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") Payroll Services
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") Bookkeeping Accounts
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") Sales & Use Tax Returns
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") Tax Extentions
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") Individual & Corporate Taxes prepration
+        //-   a.whitespace-nowrap.text-black.bg-white.rounded-sm.px-4.py-2.border-2.border-white.font-semibold.text-lg.duration-200(href="#" class="hover:shadow-[0px_2px_10px_10px_rgba(255,255,255,0.1)] hover:-translate-y-0.5") Notary Public
+          

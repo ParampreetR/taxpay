@@ -7,21 +7,22 @@ html
     header.flex.justify-center.fixed.w-screen.top-3.z-50
       include ./components/nav
 
-    main
-      div.pt-60.pb-12.h-screen(class="lg:flex-row lg:pt-36", style="background-image: url(/images/trucking.jpg); background-size: cover; background-repeat: no-repeat;")
-        .p-10.py-12.my-12.mt-24.backdrop-blur-md.mx-auto.text-center(class="bg-[#000000aa]")
-          section.text-4xl.font-semibold.text-center.text-white.mb-5 
-            span(class="text-[#e6433b]") About 
-            span us
-          h2.text-2xl.text-white.mt-5 One Stop Shop for all your trucking needs
-          .text-white.mx-32 Starting out from a small office in California, our business was built on the back of credible customer referrals throughout the California . Serving more than 1300 clients from all over California , the Innovative Tax & Reg Inc today stands as one of the region’s most renowned Trucking Solution Specialists in the field, operating under the brand of - Innovative, Innovative Tax & Reg Inc and E Trucking Solutions. What remains unchanged over the years is our hard work, dedication, and our punctuality; along with our strong commitment to stand together with our customers during all kinds of inspections and audits. With decades of experience and day to day expertise in, Starting a new Trucking Company, Providing Required Permits, License Plates, Titles, across the United States, our skilled staff is equipped to handle everything that a trucking professional needs. We make sure that our customers will always be up-to-date with their records at the FMCSA and the DMV. The Feature-rich IoT platform of Innovative and complete compliance management with E Trucking Solutions makes us a one-stop destination for trucking companies for all licensing, compliance and software services. The ultimate goal is to create and deliver a secure and seamless work environment for the Trucking Industry.
+    main.mt-44
+      section.text-4xl.font-semibold.text-center.text-black.mb-5 
+        span(class="text-[#0B5351]") About 
+        span us
 
-          h2.text-2xl.text-white.mt-5 Tax Preparation & Accounting Services Since 2001
+      .flex.flex-row.justify-evenly.items-center
+        .text-justify(class="lg:w-[60vw] xl:w-[50vw]")
+          h2.text-2xl.text-black.mt-5 One Stop Shop for all your trucking needs
+          .text-black Starting out from a small office in California, our business was built on the back of credible customer referrals throughout the California . Serving more than 1300 clients from all over California , the Innovative Tax & Reg Inc today stands as one of the region’s most renowned Trucking Solution Specialists in the field, operating under the brand of - Innovative, Innovative Tax & Reg Inc and E Trucking Solutions. What remains unchanged over the years is our hard work, dedication, and our punctuality; along with our strong commitment to stand together with our customers during all kinds of inspections and audits. With decades of experience and day to day expertise in, Starting a new Trucking Company, Providing Required Permits, License Plates, Titles, across the United States, our skilled staff is equipped to handle everything that a trucking professional needs. We make sure that our customers will always be up-to-date with their records at the FMCSA and the DMV. The Feature-rich IoT platform of Innovative and complete compliance management with E Trucking Solutions makes us a one-stop destination for trucking companies for all licensing, compliance and software services. The ultimate goal is to create and deliver a secure and seamless work environment for the Trucking Industry.
 
-          p.text-white Our primary objective is to provide High-quality tax services. We recognized that each business is unique and the traditional “cookie-cutter” tax preparation approach was not serving their best interests. Out of this desire to better serve the accounting and tax preparation needs of Californian businesses and individuals, we made Innovative Tax & Reg Inc.
+          h2.text-2xl.text-black.mt-5 Tax Preparation & Accounting Services Since 2001
 
-          p.text-white In the beginning, Kuljeenpal Bhullar started preparing fellow trucker's taxes out of his home. As demand for his services grew, the accounting firm expanded to include more talented tax preparers with experience in a variety of industries. Today, Kuljeenpal Bhullar still diligently works to prepare taxes and personally trains each tax consultant in order to achieve a higher standard of quality. Because of his tireless efforts, our Sacramento accounting firm has grown to become an industry leader that prepares roughly 5,000 tax returns annually. We have grown to provide accounting services throughout California. We offer accounting and tax services to a variety of industries, such as:
-          ul.text-white
+          p.text-black Our primary objective is to provide High-quality tax services. We recognized that each business is unique and the traditional “cookie-cutter” tax preparation approach was not serving their best interests. Out of this desire to better serve the accounting and tax preparation needs of Californian businesses and individuals, we made Innovative Tax & Reg Inc.
+
+          p.text-black In the beginning, Kuljeenpal Bhullar started preparing fellow trucker's taxes out of his home. As demand for his services grew, the accounting firm expanded to include more talented tax preparers with experience in a variety of industries. Today, Kuljeenpal Bhullar still diligently works to prepare taxes and personally trains each tax consultant in order to achieve a higher standard of quality. Because of his tireless efforts, our Sacramento accounting firm has grown to become an industry leader that prepares roughly 5,000 tax returns annually. We have grown to provide accounting services throughout California. We offer accounting and tax services to a variety of industries, such as:
+          ul.text-black
             li Transport
             li Grocery Stores
             li Real Estate
@@ -29,5 +30,10 @@ html
             li Entertainment
             li Healthcare
 
-          p.text-white Our tax consultants have a track record of helping individuals and businesses of all sizes with day-to-day accounting and tax issues. We recognize that tax season is often a stressful time for businesses and individuals alike. Our accounting firm’s mission is to provide clients with innovative, yet practical tax solutions that improve profitability, anticipate needs and provide our clients with the highest level of customer service, resulting in a smooth, worry-free tax season.
+          p.text-black Our tax consultants have a track record of helping individuals and businesses of all sizes with day-to-day accounting and tax issues. We recognize that tax season is often a stressful time for businesses and individuals alike. Our accounting firm’s mission is to provide clients with innovative, yet practical tax solutions that improve profitability, anticipate needs and provide our clients with the highest level of customer service, resulting in a smooth, worry-free tax season.
 
+        .shadow.rounded-xl(class="w-[450px] xl:w-[500px]  h-[600px] bg-[#0B5351]")
+
+    div.mapouter.my-20
+      div.gmap_canvas
+        iframe(class="h-96 w-screen" id="gmap_canvas" src="https://maps.google.com/maps?q=innovative&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0")
